@@ -1,0 +1,8 @@
+# Ignore environment files
+ai_agent/.env
+backend/.env
+
+# Common ignores
+node_modules/
+__pycache__/
+*.log

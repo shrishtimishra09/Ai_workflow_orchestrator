@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    command: python backend/app.py
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./backend:/app/backend
+      - ./frontend/build:/app/frontend/build
+    environment:
+      - FLASK_ENV=production
+
+  ai_agent:
+    build: .
+    command: python ai_agent/ai-agent.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./ai_agent:/app/ai_agent
+      - ./frontend/build:/app/frontend/build
+    environment:
+      - FLASK_ENV=production

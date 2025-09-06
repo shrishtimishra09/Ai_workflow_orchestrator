@@ -1,0 +1,11 @@
+Flask
+Flask-Cors
+Flask-SQLAlchemy
+Flask-SocketIO
+python-socketio
+python-engineio
+Werkzeug
+python-dotenv
+Flask-JWT-Extended
+openai
+eventlet
